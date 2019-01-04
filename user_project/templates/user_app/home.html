@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>i am home.html</h1>
+        <ul>
+            {%if access_users %}
+            {% for acc in access_users %}
+            <li>user info<br>
+                <ul>first name = {{acc.first_name}}</ul>
+                <ul>last name = {{acc.last_name}}</ul>
+                <ul>email :- {{acc.email}}</ul>
+            </li>
+            {%endfor%}
+            {%endif%}
+        </ul>
+    </body>
+</html>
